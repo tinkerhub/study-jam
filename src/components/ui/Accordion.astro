@@ -1,0 +1,49 @@
+---
+import AccordionItem from "./AccordionItem.astro";
+
+const content = [
+{
+  index: 1,
+  title: "Day 1 : Foundation Building",
+  description: "Introduction to core concepts and setting up development environment."
+},
+{
+  index: 2,
+  title: "Day 2-3 : Core Skills Development",
+  description: ".Deep dive into key features and practical implementation"
+
+},
+{
+  index: 3,
+  title: "Day 4-5 : Advanced Concepts",
+  description: "Exploring advanced features and best practices"
+},
+{
+  index: 4,
+  title: "Project Building",
+  description: "Build a complete project with mentor guidance"
+   },
+// {
+//   index: 5,
+//   title: "Reporting",
+//   description: "Throughout the process, we will provide regular reports on the performance of your marketing campaigns. This will allow you to track progress, measure success, and make informed decisions about future strategies."
+// },
+// {
+//   index: 6,
+//   title: "Improvement",
+//   description: "Based on the data and insights gathered from the reports, we will make recommendations for further improvement. This may involve refining existing strategies, exploring new opportunities, or adjusting tactics to better align with your business goals."
+// }
+];
+---
+
+{
+  content.map((item) => {
+    return (
+      <AccordionItem
+        index={item.index}
+        title={item.title}
+        description={item.description}
+      />
+    );
+  })
+}
