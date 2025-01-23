@@ -1,9 +1,0 @@
-[build]
-  publish = "dist"        # This is the default folder where Astro generates the build
-  command = "npm run build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
