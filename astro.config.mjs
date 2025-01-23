@@ -10,7 +10,5 @@ export default defineConfig({
   site: "https://positivustheme.vercel.app",
   integrations: [tailwind()],
   output: 'server',
-  adapter: netlify({
-    edgeMiddleware: true
-  }),
+  adapter: netlify(),
 });
